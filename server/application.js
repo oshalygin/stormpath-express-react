@@ -10,7 +10,7 @@ import open from "open";
 // import router from "./routes";
 
 let application = express();
-let stormpath = require("express-stormpath");
+// let stormpath = require("express-stormpath");
 let port = process.env.PORT || 3000; //eslint-disable-line no-process-env
 
 
