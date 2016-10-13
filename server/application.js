@@ -6,14 +6,20 @@ import express from "express";
 // import configuration from "../webpack.config.dev";
 import colors from "colors"; //eslint-disable-line no-unused-vars
 import open from "open";
+import { STORMPATH_API_KEY } from "../utilities/configurationKeys";
 
 // import router from "./routes";
 
 let application = express();
-// let stormpath = require("express-stormpath");
+let stormpath = require("express-stormpath");
+
+application.use(stormpath.init(application, {
+    application: {
+        href: STORMPATH_API_KEY
+    }
+}));
+
 let port = process.env.PORT || 3000; //eslint-disable-line no-process-env
-
-
 
 // application.use(bodyParser.urlencoded({ extended: true }));
 // application.use(bodyParser.json());
