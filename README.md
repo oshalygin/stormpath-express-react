@@ -1,7 +1,5 @@
 # Stormpath React Spike
 
-
-
 ####To run this application follow these steps:
 1.  Clone this repository.
 2.  Run  `npm install`  to pull in the project dependencies.
