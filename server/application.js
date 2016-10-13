@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import express from "express";
 // import path from "path";
+import express from "express";
 // import bodyParser from "body-parser";
 // import webpack from "webpack";
 // import configuration from "../webpack.config.dev";
@@ -10,7 +10,10 @@ import open from "open";
 // import router from "./routes";
 
 let application = express();
+let stormpath = require("express-stormpath");
 let port = process.env.PORT || 3000; //eslint-disable-line no-process-env
+
+
 
 // application.use(bodyParser.urlencoded({ extended: true }));
 // application.use(bodyParser.json());
