@@ -34,7 +34,10 @@ application.get("/api", stormpath.loginRequired, (request, response) => {
         if (!!error) {
             return error;
         }
-        return response.json({apiId: apiKey.id, apiSecret: apiKey.secret});
+        return response.json({
+            apiId: apiKey.id,
+            apiSecret: apiKey.secret
+        });
     });
 
 });

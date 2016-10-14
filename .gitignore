@@ -1,6 +1,10 @@
 node_modules
-dist
 npm-debug.log
+
+dist
 coverage
+
 .vscode/chrome
+.DS_Store
+
 configurationKeys.js
